@@ -7,20 +7,69 @@
 }
 
 
+/* ====================================== */
+/* all similar style codes  */
+/* =================================== */
 
 
-/*--------- navbar styles ------------------*/
 
 html{
     scroll-behavior: smooth;
 }
-
-
+section{
+    padding: 100px 0;
+}
 .max-width{ 
     max-width: 1300px;
     padding: 0 80;
     margin: auto;
 }
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    content: "";
+    position : relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+section .title::before{
+    content: "";
+    position : absolute;
+    bottom : 0px;
+    left: 50%;
+    width: 150px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    content: ""; 
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 15px; 
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/*--------- navbar styles ------------------*/
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -160,74 +209,6 @@ html{
 
 
 /* home content editing up there  */
-
-
-
-
-/* ====================================== */
-/* all similar style codes  */
-/* =================================== */
-
-
-
-
-section{
-    padding: 100px 0;
-}
-
-
-.about, .services, .skills, .teams, .contact{
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .about-content, 
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
-    display : flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto 20px auto 20px;
-
-
-}
-
-
-
-
-section .title{
-    content: "";
-    position : relative;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-section .title::before{
-    content: "";
-    position : absolute;
-    bottom : 0px;
-    left: 50%;
-    width: 150px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    content: ""; 
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    font-size: 15px; 
-    color: crimson;
-    padding: 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
 
 
 /* about sections editing starts here below  */
@@ -411,10 +392,10 @@ section .title::after{
 .skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .python::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .flask::before{
     width: 70%;
 }
 
